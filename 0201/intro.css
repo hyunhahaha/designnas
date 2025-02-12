@@ -1,7 +1,42 @@
+
+
+
+h1 {
+  text-align: center;  /* 수평 중앙 정렬 */
+  margin-bottom: 20px;
+}
+
+
+.popup{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate:-50% -50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* 그림자 효과 */
+}
+
+
+
 .img1{
     display: flex;  
-    margin-left: 400px;
+    /* margin-left: 400px;
+    margin-bottom: 50px;
+    margin: 0 aurt; */
+}
 
+.container{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.description {
+  margin-bottom: 60px;
 }
 
 
@@ -9,14 +44,16 @@
     background-color: #ffdd80; 
 }
 
-h1 {
-    text-align: center;  /* 수평 중앙 정렬 */
-  }
 
-  li{
+  .my li{
       margin-left: 20px;
       margin-bottom: 10px;
   }
+
+.my :last-child{
+  list-style: none;
+}
+
 
   .text_01, .text_02, .text_03 {
     text-align: center;
@@ -29,25 +66,21 @@ h1 {
     height: 300px;
   }
 
-  .web{
-    margin-left: 420px;
-    margin-top: -10px;
-    font-weight: normal;
-  }
-
 
 .list{
     list-style: none;
     display: flex;
-    margin-left: 420px;
+    justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .list2{
     list-style: none;
     display: flex;
-    margin-left: 420px;
+    justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 
@@ -57,18 +90,30 @@ h1 {
 }
 
 
+.tools{
+  margin-left: 20px;
+}
+
+
+.list_{
+  margin-left: 20px;
+
+}
+
+
 .Contact{
     font-size: 30px;
-    margin-right: 37px;
+    margin-right: 80px;
+
 }
 
 /* Figma, Photoshop, Illustrator, Premiere Pro에만 hover 효과 적용 */
-.Figma:hover, .Photoshop:hover, .Illustrator:hover, .Premiere:hover {
+.tools:hover {
     color: #ffdd80;
 }
 
 
-.E-mail:hover, .Phone:hover, .Instagram:hover, .Facebook:hover {
+.list_:hover {
     color: #ffa743;
 }
 
@@ -79,5 +124,9 @@ h1 {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
